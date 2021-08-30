@@ -1,0 +1,2 @@
+rootProject.name = "Slurpss - Food and Mess Services"
+include ':app'
