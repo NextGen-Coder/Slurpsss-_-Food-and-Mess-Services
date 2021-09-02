@@ -4,7 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:backgroundTint="#F9F9F9"
+    android:background="#f9f9f9"
     tools:context=".MainActivity">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/mess_section"
+        android:scaleType="fitXY"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ImageView>
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -24,7 +36,9 @@
                 android:id="@+id/userId"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="User ID" />
+                android:hint="User ID"
+                android:backgroundTint="@color/white"
+                android:background="@color/white"/>
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -35,6 +49,8 @@
                 android:id="@+id/userPass"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:background="@color/white"
                 android:hint="Password" />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -42,14 +58,19 @@
     </LinearLayout>
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="250dp"
+        android:layout_height="39dp"
         android:text="Submit"
         android:onClick="submitLogin"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        tools:ignore="UsingOnClickInXml" />
+        tools:ignore="UsingOnClickInXml"
+        android:background="#FFB740"
+        android:backgroundTint="#FFB740"
+
+
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
