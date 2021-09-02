@@ -1,0 +1,2 @@
+rootProject.name = "Slurpss Admin"
+include ':app'
