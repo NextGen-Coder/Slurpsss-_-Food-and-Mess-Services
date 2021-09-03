@@ -30,4 +30,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void gotoUser(View view) {
     }
+
+    public void logOut(View view) {
+
+    }
 }
