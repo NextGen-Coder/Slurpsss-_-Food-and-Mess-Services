@@ -8,7 +8,6 @@
     android:background="#f9f9f9"
     tools:context=".LoginActivity">
 
-
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -74,8 +73,6 @@
         tools:ignore="UsingOnClickInXml"
         android:background="#FFB740"
         android:backgroundTint="#FFB740"
-
-
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
