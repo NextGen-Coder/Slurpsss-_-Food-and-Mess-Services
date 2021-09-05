@@ -45,12 +45,7 @@ public class LoginActivity extends AppCompatActivity {
                     try {
                         String dbId = AESUtils.decrypt( id);
                         String dbPass = AESUtils.decrypt( pass);
-
-                        System.out.println(userId+" user =====> "+userPass);
-                        System.out.println(dbId+" db =====> "+dbPass);
-
-                        if(dbId.equals(userId) && dbPass.equals(userPass)){
-                            
+                        if(dbId.equals(userId) && dbPass.equals(userPass)) {
                             Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                             startActivity(intent);
                         }
