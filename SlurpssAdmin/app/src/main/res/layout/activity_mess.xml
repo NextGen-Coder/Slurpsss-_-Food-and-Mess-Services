@@ -1,36 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MessActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="22dp"
+        android:backgroundTint="#FFFFFFFF"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:paddingVertical="10dp"
+        android:text="Add Mess"
+        android:onClick="addMess"
+        android:shadowColor="@color/black"
+        app:cornerRadius ="22dp"
+        android:layout_marginEnd="-12dp"
+        android:paddingEnd="8pt"
+        />
+
+    <ImageView
+        android:id="@+id/imageView2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".MessActivity">
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginTop="22dp"
-            android:backgroundTint="#FFFFFFFF"
-            android:textColor="@color/black"
-            android:textSize="18dp"
-            android:paddingVertical="10dp"
-            android:text="Add Mess"
-            android:onClick="addMess"
-            android:shadowColor="@color/black"
-            app:cornerRadius ="22dp"
-            android:layout_marginEnd="-12dp"
-            android:paddingEnd="8pt"
-            />
-
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:srcCompat="@drawable/mess_section"
-             />
-
-
+        app:srcCompat="@drawable/mess_section"
+         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
