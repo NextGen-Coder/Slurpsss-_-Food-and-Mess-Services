@@ -10,6 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SlurpssFoodAndMessServices">
         <activity android:name=".MessLoginActivity"></activity>
+        <activity android:name=".MessResetPassword"></activity>
         <activity android:name=".UserActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>

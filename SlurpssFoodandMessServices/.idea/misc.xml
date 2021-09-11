@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/layout/activity_mess_login.xml" value="0.28229166666666666" />
+        <entry key="app/src/main/res/layout/activity_mess_reset_password.xml" value="0.25" />
       </map>
     </option>
   </component>
