@@ -16,7 +16,7 @@
         android:backgroundTint="#FFFFFFFF"
         android:paddingVertical="10dp"
 
-        android:paddingEnd="8pt"
+        android:paddingEnd="9pt"
         android:shadowColor="@color/black"
         android:text="Logout"
         android:onClick="logout"
