@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "748943765147",
+    "firebase_url": "https://slurpss-db-default-rtdb.firebaseio.com",
+    "project_id": "slurpss-db",
+    "storage_bucket": "slurpss-db.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:748943765147:android:67cb8fd35803d7eab9a03e",
+        "android_client_info": {
+          "package_name": "co.in.nextgencoder.slurpss_foodandmessservices"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "748943765147-9hmttmoago4id64tmbuc5i2uskltdjv4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAAefIgwalZKYP-8fFXUYtMo41J94qal4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "748943765147-9hmttmoago4id64tmbuc5i2uskltdjv4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:748943765147:android:69fccc65a68a5562b9a03e",
+        "android_client_info": {
+          "package_name": "co.in.nextgencoder.slurpssadmin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "748943765147-9hmttmoago4id64tmbuc5i2uskltdjv4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAAefIgwalZKYP-8fFXUYtMo41J94qal4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "748943765147-9hmttmoago4id64tmbuc5i2uskltdjv4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

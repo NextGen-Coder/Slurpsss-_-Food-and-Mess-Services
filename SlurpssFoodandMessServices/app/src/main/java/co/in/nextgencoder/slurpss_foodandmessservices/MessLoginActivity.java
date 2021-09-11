@@ -15,6 +15,8 @@ public class MessLoginActivity extends AppCompatActivity {
     }
 
     public void resetMessPassword(View view) {
-
+        Intent intent = new Intent( this, MessResetPassword.class);
+        intent.setFlags( Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity( intent);
     }
 }
