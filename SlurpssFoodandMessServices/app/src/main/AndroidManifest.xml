@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SlurpssFoodAndMessServices">
-        <activity android:name=".MessActivity"></activity>
+        <activity android:name=".MessLoginActivity"></activity>
         <activity android:name=".UserActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
