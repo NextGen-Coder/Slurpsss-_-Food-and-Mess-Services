@@ -9,11 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SlurpssAdmin">
-        <activity android:name=".MainActivity">
 
-        </activity>
+        <activity android:name=".MainActivity"> </activity>
         <activity android:name=".AddMessActivity" />
         <activity android:name=".MessActivity" />
+
         <activity android:name=".LoginActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
