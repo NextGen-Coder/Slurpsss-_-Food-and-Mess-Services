@@ -34,4 +34,10 @@ public class MessHomeActivity extends AppCompatActivity {
         startActivity(intent);
 
     }
+
+    public void goToDish(View view) {
+        Intent intent = new Intent( this, MessDishActivity.class);
+        intent.setFlags( Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity( intent);
+    }
 }
