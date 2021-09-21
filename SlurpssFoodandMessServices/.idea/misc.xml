@@ -3,10 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/hp/Desktop/Workspace/Slurpsss-_-Food-and-Mess-Services/SlurpssFoodandMessServices/app/src/main/res/layout/activity_mess_edit_profile.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/hp/Desktop/Workspace/Slurpsss-_-Food-and-Mess-Services/SlurpssFoodandMessServices/app/src/main/res/layout/activity_mess_home.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/hp/Desktop/Workspace/Slurpsss-_-Food-and-Mess-Services/SlurpssFoodandMessServices/app/src/main/res/layout/activity_mess_login.xml" value="0.25416666666666665" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.21354166666666666" />
+        <entry key="app/src/main/res/layout/activity_mess_add_dish.xml" value="0.2505201479825413" />
         <entry key="app/src/main/res/layout/activity_mess_home.xml" value="0.21354166666666666" />
         <entry key="app/src/main/res/layout/activity_mess_login.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_mess_reset_password.xml" value="0.25" />
