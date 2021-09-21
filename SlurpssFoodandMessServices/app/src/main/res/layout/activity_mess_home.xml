@@ -37,6 +37,49 @@
         app:srcCompat="@drawable/logo" />
 
     <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2">
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="#FFB740"
+            android:onClick="gotoEditMesss"
+            android:padding="11dp"
+            android:text="Edir Profile"
+            android:textSize="15dp"
+            app:cornerRadius="25dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="#FFB740"
+            android:padding="11dp"
+            android:text="Logout"
+            android:textSize="15dp"
+            app:cornerRadius="25dp"
+            android:onClick="gotoLogout"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+    </LinearLayout>
+
+
+    <LinearLayout
         android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -54,7 +97,7 @@
             android:padding="11dp"
             android:text="Dish"
             android:onClick="goToDish"
-            android:textSize="18dp"
+            android:textSize="15dp"
             app:cornerRadius="25dp"
             android:layout_margin="10dp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -70,7 +113,7 @@
             android:backgroundTint="#FFB740"
             android:padding="11dp"
             android:text="Package"
-            android:textSize="18dp"
+            android:textSize="15dp"
             app:cornerRadius="25dp"
             android:layout_margin="10dp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -96,7 +139,7 @@
             android:backgroundTint="#FFB740"
             android:padding="11dp"
             android:text="Order"
-            android:textSize="18dp"
+            android:textSize="15dp"
             app:cornerRadius="25dp"
             android:layout_margin="10dp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -112,7 +155,7 @@
             android:backgroundTint="#FFB740"
             android:padding="11dp"
             android:text="Customer"
-            android:textSize="18dp"
+            android:textSize="15dp"
             app:cornerRadius="25dp"
             android:layout_margin="10dp"
             app:layout_constraintBottom_toBottomOf="parent"
