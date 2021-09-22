@@ -9,9 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SlurpssFoodAndMessServices">
-        <activity android:name=".MessAddDishActivity">
-
-        </activity>
+        <activity android:name=".MessAddPackageActivity"></activity>
+        <activity android:name=".MessPackageActivity"></activity>
+        <activity android:name=".MessAddDishActivity"></activity>
         <activity android:name=".MessDishActivity" />
         <activity
             android:name=".MessEditProfileActivity"

@@ -40,4 +40,10 @@ public class MessHomeActivity extends AppCompatActivity {
         intent.setFlags( Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity( intent);
     }
+
+    public void goToPackage(View view) {
+        Intent intent = new Intent( this, MessPackageActivity.class);
+        intent.setFlags( Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity( intent);
+    }
 }
