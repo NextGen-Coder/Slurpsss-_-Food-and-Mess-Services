@@ -20,6 +20,13 @@ public class Dish {
         this.category = category;
     }
 
+    public Dish(String name, Double price, String description, String category) {
+        this.name = name;
+        this.price = price;
+        this.description = description;
+        this.category = category;
+    }
+
     public String getId() {
         return id;
     }
@@ -66,5 +73,17 @@ public class Dish {
 
     public void setCategory(String category) {
         this.category = category;
+    }
+
+    @Override
+    public String toString() {
+        return "Dish{" +
+                "id='" + id + '\'' +
+                ", name='" + name + '\'' +
+                ", image='" + image + '\'' +
+                ", price=" + price +
+                ", description='" + description + '\'' +
+                ", category='" + category + '\'' +
+                '}';
     }
 }

@@ -18,4 +18,22 @@ public class Validator {
 
         return "Validation Successful";
     }
+
+
+    public String validateAddDish(String name, String price, String description) {
+
+        if( name != null && name.equals( "")) {
+            return "Name is required";
+        }
+
+        if( price != null && price.equals( "")) {
+            return "Price is required";
+        }
+
+        if( description != null && description.equals( "")) {
+            return "Description is required";
+        }
+
+        return "Validation Successful";
+    }
 }
