@@ -10,8 +10,10 @@
         <entry key="app/src/main/res/layout/activity_mess_edit_profile.xml" value="0.24739583333333334" />
         <entry key="app/src/main/res/layout/activity_mess_home.xml" value="0.21354166666666666" />
         <entry key="app/src/main/res/layout/activity_mess_login.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_mess_package.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_mess_reset_password.xml" value="0.25" />
         <entry key="app/src/main/res/layout/item_mess_dish.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/item_mess_package.xml" value="0.25" />
       </map>
     </option>
   </component>

@@ -5,6 +5,7 @@ import java.util.HashMap;
 public class Package {
 
     private String id;
+    private String image;
     private String name;
     private String category;
     private Double price;
@@ -13,8 +14,9 @@ public class Package {
 
     public Package() { }
 
-    public Package(String id, String name, String category, Double price, String description, HashMap<String, Dish> dishes) {
+    public Package(String id, String image, String name, String category, Double price, String description, HashMap<String, Dish> dishes) {
         this.id = id;
+        this.image = image;
         this.name = name;
         this.category = category;
         this.price = price;
@@ -28,6 +30,14 @@ public class Package {
 
     public void setId(String id) {
         this.id = id;
+    }
+
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
     }
 
     public String getName() {
