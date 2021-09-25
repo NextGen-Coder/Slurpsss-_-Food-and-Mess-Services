@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/dishImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/placeholder_dish"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/dishName"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:text="Chicken Schezwan Roll"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/dishImage"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/dishPrice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:text="250 Rs"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="@+id/dishImage"
+            app:layout_constraintStart_toEndOf="@+id/dishImage"
+            app:layout_constraintTop_toBottomOf="@+id/dishName" />
+
+        <ImageView
+            android:id="@+id/dishTypeImage"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginEnd="12dp"
+            android:src="@drawable/food_type_nonveg"
+            app:layout_constraintBottom_toBottomOf="@+id/dishPrice"
+            app:layout_constraintEnd_toStartOf="@+id/dishTypeText"
+            app:layout_constraintTop_toTopOf="@+id/dishPrice" />
+
+        <TextView
+            android:id="@+id/dishTypeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Non-Veg"
+            android:textSize="20sp"
+            android:layout_marginEnd="12dp"
+            app:layout_constraintBottom_toBottomOf="@+id/dishTypeImage"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/dishTypeImage" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
