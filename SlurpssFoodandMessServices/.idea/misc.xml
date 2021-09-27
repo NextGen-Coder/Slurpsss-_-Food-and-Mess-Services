@@ -13,7 +13,7 @@
         <entry key="app/src/main/res/layout/activity_mess_package.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_mess_reset_password.xml" value="0.25" />
         <entry key="app/src/main/res/layout/item_mess_dish.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/item_mess_package.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/item_mess_package.xml" value="0.33" />
       </map>
     </option>
   </component>
