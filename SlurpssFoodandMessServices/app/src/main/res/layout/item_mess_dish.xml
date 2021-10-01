@@ -3,11 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
 
+    
+    
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:padding="8dp">
 
         <ImageView
@@ -22,12 +24,13 @@
             android:id="@+id/dishName"
             android:layout_width="0dp"
             android:layout_height="42dp"
-            android:text="Chicken Schezwan Roll"
             android:layout_marginStart="12dp"
             android:layout_marginTop="12dp"
+            android:text="Premium Veg Dabba"
             android:textSize="28sp"
             android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintEnd_toStartOf="@+id/linearLayout4"
             app:layout_constraintStart_toEndOf="@+id/dishImage"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -36,7 +39,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="12dp"
-            android:text="250 Rs"
+            android:text="100 Rs"
             android:textSize="24sp"
             app:layout_constraintBottom_toBottomOf="@+id/dishImage"
             app:layout_constraintStart_toEndOf="@+id/dishImage"
@@ -47,7 +50,7 @@
             android:layout_width="20dp"
             android:layout_height="20dp"
             android:layout_marginEnd="12dp"
-            android:src="@drawable/food_type_nonveg"
+            android:src="@drawable/food_type_veg"
             app:layout_constraintBottom_toBottomOf="@+id/dishPrice"
             app:layout_constraintEnd_toStartOf="@+id/dishTypeText"
             app:layout_constraintTop_toTopOf="@+id/dishPrice" />
@@ -56,12 +59,50 @@
             android:id="@+id/dishTypeText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Non-Veg"
-            android:textSize="20sp"
+            android:text="Veg"
             android:layout_marginEnd="12dp"
+            android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="@+id/dishTypeImage"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/linearLayout4"
             app:layout_constraintTop_toTopOf="@+id/dishTypeImage" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            >
+
+            <ImageView
+                android:id="@+id/dishEditButton"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="12dp"
+                android:src="@drawable/icon_edit"
+                app:layout_constraintBottom_toBottomOf="@+id/dishPrice"
+                app:layout_constraintEnd_toStartOf="@+id/dishTypeText"
+                app:layout_constraintTop_toTopOf="@+id/dishPrice" />
+
+            <ImageView
+                android:id="@+id/dishDeleteButton"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:layout_marginTop="12dp"
+                android:layout_marginStart="12dp"
+                android:src="@drawable/icon_delete"
+                app:layout_constraintBottom_toBottomOf="@+id/dishPrice"
+                app:layout_constraintEnd_toStartOf="@+id/dishTypeText"
+                app:layout_constraintTop_toTopOf="@+id/dishPrice" />
+
+        </LinearLayout>
+
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

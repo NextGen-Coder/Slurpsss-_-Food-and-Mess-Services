@@ -14,7 +14,8 @@ public class Package {
 
     public Package() { }
 
-    public Package(String id, String image, String name, String category, Double price, String description, HashMap<String, Dish> dishes) {
+    public Package(String id, String image, String name, String category, Double price,
+                   String description, HashMap<String, Dish> dishes) {
         this.id = id;
         this.image = image;
         this.name = name;
