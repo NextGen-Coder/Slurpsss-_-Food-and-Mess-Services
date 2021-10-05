@@ -33,7 +33,7 @@ public class DishAdapter extends RecyclerView.Adapter<DishAdapter.DishViewHolder
     public void onBindViewHolder(@NonNull DishViewHolder holder, int position) {
         holder.nameTV.setText( dishes.get(position).getName());
         holder.priceTV.setText( dishes.get( position).getPrice()+" Rs");
-        holder.typeTV.setText( dishes.get( position).getCategory());
+         holder.typeTV.setText( dishes.get( position).getCategory());
 
         if( dishes.get( position).getCategory().equals( "Veg")) {
             holder.typeImage.setImageResource( R.drawable.food_type_veg);
