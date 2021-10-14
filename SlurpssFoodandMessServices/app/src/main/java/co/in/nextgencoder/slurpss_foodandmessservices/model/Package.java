@@ -12,7 +12,7 @@ public class Package {
     private String description;
     private HashMap<String, Dish> dishes;
 
-    public Package() { }
+    public Package(String packageId, String name, Object o, double v, String description, String foodType) { }
 
     public Package(String id, String image, String name, String category, Double price,
                    String description, HashMap<String, Dish> dishes) {
