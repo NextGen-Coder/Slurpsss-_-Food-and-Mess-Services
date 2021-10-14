@@ -24,7 +24,6 @@ import co.in.nextgencoder.slurpss_foodandmessservices.util.Validator;
 public class MessLoginActivity extends AppCompatActivity {
 
     private EditText mailET, passET;
-
     private Validator validator = new Validator();
     private FirebaseAuth firebaseAuth;
     private DatabaseReference databaseReference;
@@ -47,7 +46,7 @@ public class MessLoginActivity extends AppCompatActivity {
         startActivity( intent);
     }
 
-    public void submitUserLogin(View view) {
+    public void submitMessLogin(View view) {
         String mail = mailET.getText().toString().trim();
         String pass = passET.getText().toString().trim();
 

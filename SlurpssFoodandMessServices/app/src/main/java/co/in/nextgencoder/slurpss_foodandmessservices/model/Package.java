@@ -25,6 +25,21 @@ public class Package {
         this.dishes = dishes;
     }
 
+    public Package(String name, Double price, String description, String category) {
+        this.name = name;
+        this.price = price;
+        this.description = description;
+        this.category = category;
+    }
+
+    public Package(String name, String image, Double price, String description, String category) {
+        this.name = name;
+        this.image = image;
+        this.price = price;
+        this.description = description;
+        this.category = category;
+    }
+
     public String getId() {
         return id;
     }
@@ -79,5 +94,17 @@ public class Package {
 
     public void setDishes(HashMap<String, Dish> dishes) {
         this.dishes = dishes;
+    }
+
+
+    public String toString() {
+        return "Package{" +
+                "id='" + id + '\'' +
+                ", name='" + name + '\'' +
+                ", image='" + image + '\'' +
+                ", price=" + price +
+                ", description='" + description + '\'' +
+                ", category='" + category + '\'' +
+                '}';
     }
 }

@@ -21,8 +21,6 @@ public class MessHomeActivity extends AppCompatActivity {
 
     public void gotoEditMesss(View view) {
         Intent intent = new Intent(MessHomeActivity.this,MessEditProfileActivity.class );
-
-
         startActivity(intent);
     }
 
@@ -37,7 +35,6 @@ public class MessHomeActivity extends AppCompatActivity {
 
     public void goToDish(View view) {
         Intent intent = new Intent( this, MessDishActivity.class);
-        intent.setFlags( Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity( intent);
     }
 

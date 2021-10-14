@@ -9,9 +9,24 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SlurpssFoodAndMessServices">
-        <activity android:name=".MessAddPackageActivity"></activity>
-        <activity android:name=".MessPackageActivity"></activity>
-        <activity android:name=".MessAddDishActivity"></activity>
+        <activity
+            android:name=".MessEditPackageActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MessEditDishActivity"
+            android:exported="true" />
+        <activity
+            android:name=".UserHomeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".UserResetPasswordActivity"
+            android:exported="true" />
+        <activity
+            android:name=".UserLoginActivity"
+            android:exported="true" />
+        <activity android:name=".MessAddPackageActivity" />
+        <activity android:name=".MessPackageActivity" />
+        <activity android:name=".MessAddDishActivity" />
         <activity android:name=".MessDishActivity" />
         <activity
             android:name=".MessEditProfileActivity"

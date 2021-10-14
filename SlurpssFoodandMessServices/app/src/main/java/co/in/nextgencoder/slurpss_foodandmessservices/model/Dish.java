@@ -27,6 +27,14 @@ public class Dish {
         this.category = category;
     }
 
+    public Dish(String name, String image, Double price, String description, String category) {
+        this.name = name;
+        this.image = image;
+        this.price = price;
+        this.description = description;
+        this.category = category;
+    }
+
     public String getId() {
         return id;
     }
