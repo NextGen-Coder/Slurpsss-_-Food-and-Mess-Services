@@ -99,6 +99,7 @@ public class PackageServiceImpl implements PackageService {
 
         DatabaseReference packageRef = databaseReference.child( "mess").child( messId).child( "packages");
         String packageId = packageRef.push().getKey();
+        packageobj.setId( packageId);
 
         packageRef.child( packageId).setValue( packageobj)
                 .addOnCompleteListener(new OnCompleteListener<Void>() {

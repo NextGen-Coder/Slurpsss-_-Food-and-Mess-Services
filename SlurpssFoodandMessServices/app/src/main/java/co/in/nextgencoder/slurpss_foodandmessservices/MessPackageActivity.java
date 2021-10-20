@@ -28,7 +28,11 @@ public class MessPackageActivity extends AppCompatActivity {
 
         recyclerView = findViewById( R.id.allPackageRecyclerView);
         recyclerView.setLayoutManager( new LinearLayoutManager( this));
+    }
 
+    @Override
+    protected void onStart() {
+        super.onStart();
         packageService.getAllPackages(new Callback<List<Package>>() {
             @Override
             public void callback(List<Package> packages) {

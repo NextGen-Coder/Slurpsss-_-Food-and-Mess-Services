@@ -30,6 +30,12 @@ public class Mess {
         this.dishes = dishes;
     }
 
+    public Mess(String addressURL, String description, String safetyMeasures) {
+        this.addressURL = addressURL;
+        this.description = description;
+        this.safetyMeasures = safetyMeasures;
+    }
+
     public String getId() {
         return id;
     }

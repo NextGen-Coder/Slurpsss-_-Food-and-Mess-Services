@@ -15,6 +15,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.List;
 
 import co.in.nextgencoder.slurpss_foodandmessservices.MessEditDishActivity;
+import co.in.nextgencoder.slurpss_foodandmessservices.MessEditPackageActivity;
 import co.in.nextgencoder.slurpss_foodandmessservices.R;
 import co.in.nextgencoder.slurpss_foodandmessservices.model.Dish;
 import co.in.nextgencoder.slurpss_foodandmessservices.model.Package;
@@ -52,7 +53,7 @@ public class PackageAdapter extends RecyclerView.Adapter<PackageAdapter.PackageV
         holder.editBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent( v.getContext(), MessEditDishActivity.class);
+                Intent intent = new Intent( v.getContext(), MessEditPackageActivity.class);
                 intent.putExtra( "packageId", packages.get( position).getId());
                 v.getContext().startActivity( intent);
             }

@@ -30,13 +30,19 @@ public class MessDishActivity extends AppCompatActivity {
         recyclerView = findViewById( R.id.allDishRecyclerView);
         recyclerView.setLayoutManager( new LinearLayoutManager( this));
 
+
+
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
         dishService.getAllDishes(new Callback<List<Dish>>() {
             @Override
             public void callback(List<Dish> dishes) {
                 recyclerView.setAdapter( new DishAdapter( dishes));
             }
         });
-
     }
 
     public void goToAddDish(View view) {

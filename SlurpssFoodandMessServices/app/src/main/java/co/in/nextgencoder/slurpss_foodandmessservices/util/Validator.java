@@ -70,4 +70,21 @@ public class Validator {
 
         return "Validation Successful";
     }
+
+    public String validateUpdateMess(String addressURL, String messDescription, String messSafety) {
+
+        if( addressURL != null && addressURL.equals( "")) {
+            return "Address URL is required";
+        }
+
+        if( messDescription != null && messDescription.equals( "")) {
+            return "Description is required";
+        }
+
+        if(messSafety != null && messSafety.equals( "")) {
+            return "Safety Measures is required";
+        }
+
+        return "Validation Successful";
+    }
 }

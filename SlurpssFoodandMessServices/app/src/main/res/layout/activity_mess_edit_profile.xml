@@ -23,18 +23,19 @@
         app:layout_constraintTop_toTopOf="parent" />
 
 
-    <Button
-        android:id="@+id/editImg"
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="#FFB740"
         android:text="Edit Image"
-        android:textSize="12sp"
-        app:cornerRadius="25dp"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/profile_image" />
+        app:layout_constraintTop_toBottomOf="@+id/profile_image"
+        app:layout_constraintVertical_bias="0.25"
+        android:onClick="gotoEditImage"
+        />
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -55,7 +56,7 @@
 
             <com.google.android.material.textfield.TextInputEditText
                 android:inputType="text"
-                android:id="@+id/messAdressURL"
+                android:id="@+id/messAddressURL"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Adress URL"
@@ -83,7 +84,7 @@
 
             <com.google.android.material.textfield.TextInputEditText
                 android:inputType="textMultiLine"
-                android:id="@+id/messPass"
+                android:id="@+id/messSafety"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Safety Measures"
@@ -98,8 +99,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#FFB740"
-        android:text="Edit Image"
+        android:text="Submit"
         app:cornerRadius="25dp"
+        android:onClick="submitEditedMess"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

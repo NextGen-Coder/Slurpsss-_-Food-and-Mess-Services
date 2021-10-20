@@ -67,8 +67,8 @@
         android:layout_height="0dp"
         android:layout_marginHorizontal="28dp"
         android:layout_marginVertical="16dp"
-        android:background="@color/white"
-        android:backgroundTint="@color/white"
+        android:backgroundTint="#FDFCE5"
+        android:background="#FDFCE5"
         app:layout_constraintBottom_toTopOf="@+id/button8"
         app:layout_constraintTop_toBottomOf="@+id/textView3"
         tools:layout_editor_absoluteX="28dp" />
