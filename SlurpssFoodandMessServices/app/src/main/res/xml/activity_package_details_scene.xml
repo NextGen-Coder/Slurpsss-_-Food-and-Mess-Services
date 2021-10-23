@@ -9,35 +9,36 @@
         motion:constraintSetStart="@id/start"
         motion:duration="1000">
         <OnClick app:targetId="@+id/addDishBtn" />
+    </Transition>
 
+    <Transition
+        motion:constraintSetEnd="@+id/start"
+        motion:constraintSetStart="@id/end"
+        motion:duration="1000">
+        <OnClick app:targetId="@+id/closeBtn" />
     </Transition>
 
     <ConstraintSet android:id="@+id/start">
         <Constraint
             android:id="@+id/addDishLayout"
             android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:layout_marginTop="50dp"
+            android:layout_height="wrap_content"
             android:background="#FF5722"
             android:backgroundTint="#FF5722"
             app:layout_constraintTop_toBottomOf="parent" />
-        <Constraint
-            android:layout_height="match_parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            android:layout_width="match_parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView3"
-            android:id="@+id/allPackageRecyclerView" />
     </ConstraintSet>
 
     <ConstraintSet android:id="@+id/end">
         <Constraint
             android:id="@+id/addDishLayout"
             android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:layout_marginTop="50dp"
+            android:layout_height="wrap_content"
             android:background="#FF5722"
             android:backgroundTint="#FF5722"
             app:layout_constraintBottom_toBottomOf="parent" />
+
+        <Constraint
+            android:id="@+id/addDishBtn"
+            android:visibility="gone" />
     </ConstraintSet>
 </MotionScene>
