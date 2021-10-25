@@ -13,9 +13,10 @@ import java.util.List;
 
 import co.in.nextgencoder.slurpss_foodandmessservices.adapter.DishAdapter;
 import co.in.nextgencoder.slurpss_foodandmessservices.model.Dish;
+import co.in.nextgencoder.slurpss_foodandmessservices.util.Callback;
 import co.in.nextgencoder.slurpss_foodandmessservices.service.DishService;
 import co.in.nextgencoder.slurpss_foodandmessservices.serviceimpl.DishServiceImpl;
-import co.in.nextgencoder.slurpss_foodandmessservices.util.Callback;
+
 
 public class MessDishActivity extends AppCompatActivity {
 

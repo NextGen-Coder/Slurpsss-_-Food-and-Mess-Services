@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/itemExplore"
+        android:title="@string/label_explore"
+        android:icon="@drawable/icon_explore"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/itemOrder"
+        android:title="@string/label_order"
+        android:icon="@drawable/icon_order"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/itemProfile"
+        android:title="@string/label_profile"
+        android:icon="@drawable/icon_profile"
+        app:showAsAction="ifRoom" />
+
+</menu>
