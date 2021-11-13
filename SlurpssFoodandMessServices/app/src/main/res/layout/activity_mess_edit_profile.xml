@@ -48,8 +48,6 @@
         android:backgroundTint="#FDFCE5"
         android:background="#FDFCE5"
         >
-
-
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">

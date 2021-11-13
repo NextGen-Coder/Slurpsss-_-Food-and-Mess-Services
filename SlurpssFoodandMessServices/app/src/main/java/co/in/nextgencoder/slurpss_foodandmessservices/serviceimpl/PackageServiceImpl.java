@@ -42,6 +42,7 @@ public class PackageServiceImpl implements PackageService {
                     Package eachPackage = dataSnapshot.getValue(Package.class);
                     packages.add( eachPackage);
                 }
+
                 finishedCallback.callback( packages);
             }
         });
