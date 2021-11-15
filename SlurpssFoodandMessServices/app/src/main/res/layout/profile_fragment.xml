@@ -3,10 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
-    android:backgroundTint="@color/white"
+    android:background="#FFF8D0"
+    android:backgroundTint="#FFF8D0"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".ProfileFragment">
+    tools:context=".ProfileFragment"
+
+    >
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -18,38 +20,54 @@
             android:layout_width="96dp"
             android:layout_height="96dp"
 
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="84dp"
             android:src="@drawable/profile_img"
             app:civ_border_color="#FF000000"
             app:civ_border_width="2dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/editImage"
+            android:id="@+id/name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="NAME"
+            app:layout_constraintTop_toBottomOf="@id/profile_image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             android:layout_marginTop="20dp"
-            android:onClick="gotoEditImage"
-            android:text="Edit Image"
+            />
 
+        <TextView
+            android:id="@+id/emailAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Mail Id"
             android:textColor="@color/black"
             android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout5"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/profile_image" />
+            app:layout_constraintTop_toBottomOf="@+id/profile_image"
+            android:layout_marginTop="20dp"
+            />
 
         <LinearLayout
+            android:id="@+id/linearLayout5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
             android:layout_marginTop="55dp"
+            android:orientation="horizontal"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editImage"
-
+            app:layout_constraintTop_toBottomOf="@+id/name"
+            android:background="@drawable/rectangle"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
             >
 
             <TextView
@@ -57,71 +75,84 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:padding="12dp"
+                android:paddingStart="36dp"
                 android:text="Edit Profile"
                 android:textSize="24dp"
-                android:paddingStart="36dp"
-                android:padding="12dp"
-                ></TextView>
+                />
 
             <TextView
+                android:id="@+id/wishlist"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:textSize="24dp"
-                android:paddingStart="36dp"
                 android:padding="12dp"
-                android:text="Wishlist"></TextView>
+                android:paddingStart="36dp"
+                android:text="Wishlist"
+                android:textSize="24dp">
+
+            </TextView>
         </LinearLayout>
 
-        <LinearLayout
-            android:id="@+id/linearLayout"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:paddingHorizontal="16dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:backgroundTint="#FDFCE5"
-            android:background="#FDFCE5"
-            >
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:inputType="text"
+        <TextView
             android:id="@+id/mobileNo"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="Mobile No."
-            android:layout_marginTop="10dp"
+            android:text="Mobile No : "
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/linearLayout5"
+            android:textSize="20dp"
+            android:layout_marginStart="20dp"
+            android:padding="20dp"
             />
-        </com.google.android.material.textfield.TextInputLayout>
 
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:text="Address :"
+            android:textSize="20dp"
+            android:layout_marginStart="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mobileNo" />
 
-                <com.google.android.material.textfield.TextInputEditText
-                    android:inputType="text"
-                    android:id="@+id/messAddress"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Address"
-                    android:layout_marginTop="10dp"
-                    />
-            </com.google.android.material.textfield.TextInputLayout>
-        </LinearLayout>
+        <TextView
+            android:id="@+id/mobileNo1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:padding="20dp"
+            android:text="Blank"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.104"
+            app:layout_constraintStart_toEndOf="@id/mobileNo"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout5" />
+
+        <TextView
+            android:id="@+id/address1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:padding="20dp"
+            android:text="Blank"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.104"
+            app:layout_constraintStart_toEndOf="@id/textView4"
+            app:layout_constraintTop_toBottomOf="@+id/mobileNo1" />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="56dp"
             android:text="Logout"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+            app:layout_constraintTop_toBottomOf="@+id/textView4"
+
+            />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
