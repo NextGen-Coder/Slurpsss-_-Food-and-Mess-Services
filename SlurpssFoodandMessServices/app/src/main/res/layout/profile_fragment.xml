@@ -34,6 +34,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="NAME"
+            android:textColor="@color/black"
+            android:textSize="20sp"
             app:layout_constraintTop_toBottomOf="@id/profile_image"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -44,9 +46,7 @@
             android:id="@+id/emailAddress"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
             android:text="Mail Id"
-            android:textColor="@color/black"
             android:textSize="20sp"
             app:layout_constraintBottom_toTopOf="@+id/linearLayout5"
             app:layout_constraintEnd_toEndOf="parent"
@@ -78,7 +78,7 @@
                 android:padding="12dp"
                 android:paddingStart="36dp"
                 android:text="Edit Profile"
-                android:textSize="24dp"
+                android:textSize="20dp"
                 />
 
             <TextView
@@ -89,7 +89,7 @@
                 android:padding="12dp"
                 android:paddingStart="36dp"
                 android:text="Wishlist"
-                android:textSize="24dp">
+                android:textSize="20dp">
 
             </TextView>
         </LinearLayout>
@@ -151,6 +151,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView4"
+            android:background="#FFF8D0"
+            android:backgroundTint="#FFF8D0"
 
             />
 
